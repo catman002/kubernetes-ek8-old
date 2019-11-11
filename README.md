@@ -1,3 +1,7 @@
+# ek8V0.1-centos7-kube1.15.3_forCENTOS下载：
+
+ek8V0.1-centos7-kube1.15.3_forCENTOS-20191111.tar.gz
+
 # EK8说明：
 Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。该产品具有以下特点：
 1）集群安装包由Kube、preserved、haproxy、docker和docker registry组成
