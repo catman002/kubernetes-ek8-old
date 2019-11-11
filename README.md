@@ -32,6 +32,7 @@ which is simple and easy to use. The product has the following features:
 5) setup automatically sets the environment required for cluster server environment
 6) support the installation mode of the manager server. The manager server can be macos[version:forMAC] or Bash supporting Linux machine[version:forLinux]
 
+- to configure ek8.cfg before installation
 - Please make sure that the machine where the installer is located can log on  the server through SSH without password.
 - The current ek8 version is CentOS. Please confirm that the CentOS version of cluster server is V7 or higher
 - This version is free. If you need a higher version, please leave a message with the author on GitHub
