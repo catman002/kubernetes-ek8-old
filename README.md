@@ -73,7 +73,7 @@ which is simple and easy to use. The product has the following features:
                     excluderegistry: Only effective when '--t=clearall', do not delete docker-registry
                     nocheckenv: Do not check the validity of cluster parameters before deleting
       checkenv command:Only check the validity of your configuration and installation parameters, excluding --t and --o
-      help command   :Display command instructions, excluding --t and --o
+      help command   :显示帮助。Display command instructions, excluding --t and --o
 ### example:
 - ek8 install --t=initall . Install all software required for cluster environment (including docker, Kube, keepalived, haproxy, keepalived, registry)
 - ek8 install --t=initall  --o=excludedocker . Install the software required for the cluster environment, but} do not install docker. 
