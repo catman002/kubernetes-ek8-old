@@ -5,12 +5,12 @@
 # EK8说明：
 
 Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。该产品具有以下特点：
-1）集群安装包由Kube、preserved、haproxy、docker和docker registry组成
-2）支持灵活的安装类型。默认情况下，用户可以选择全部安装或选择性安装根据准备好的集群服务器
-3）安装程序自动检查配置。包括IP合法性，IP连接、帐户可用性和IP可用性
-4）支持覆盖安装和全新安装。在安装期间自动检查历史版本的有效性根据情况继续使用或更新
-5）安装程序自动设置群集服务器环境所需的环境
-6）支持manager服务器的安装方式。manager服务器可以是macos[version:forMAC]或支持bash的linux机器[version:forLinux]
+1) 集群安装包由Kube、preserved、haproxy、docker和docker registry组成
+2) 支持灵活的安装类型。默认情况下，用户可以选择全部安装或选择性安装根据准备好的集群服务器
+3) 安装程序自动检查配置。包括IP合法性，IP连接、帐户可用性和IP可用性
+4) 支持覆盖安装和全新安装。在安装期间自动检查历史版本的有效性根据情况继续使用或更新
+5) 安装程序自动设置群集服务器环境所需的环境
+6) 支持manager服务器的安装方式。manager服务器可以是macos[version:forMAC]或支持bash的linux机器[version:forLinux]
 
 - 请确保安装程序所在的计算机可以通过SSH登录服务器，而无需密码.(支持安装程序所在机器远程安装)
 - 当前的ek8版本是CentOS，安装机和集群服务器必须是centos7或更高版本
