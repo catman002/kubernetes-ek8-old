@@ -95,7 +95,7 @@ which is simple and easy to use. The product has the following features:
 - ek8 install  --t=initall。安装集群环境所需的所有软件（包括docker、Kube、keepalived、haproxy、keepalived、registry）
 - ek8 install  --t=initall --o=excludedocker。安装群集环境所需的软件，但}不要安装docker。
 - ek8 install  --t=initkube 。 仅在群集服务器上安装Kebu软件并初始化Kube环境
-- ek8 install  --t=initkube --o=仅限。仅安装了Kube群集配置，未安装Kube软件
+- ek8 install  --t=initkube --o=only。仅安装了Kube群集配置，未安装Kube软件
 - ek8 delete --t=clearall。删除群集环境中安装的所有软件，[相当于重置环境，请谨慎使用]
 - ek8 delete --t=clearall --o=excludedocker--o=excluderegistry。删除集群上的所有软件并重置，但不要删除docker和docker注册表
 - ek8 delete --t=clearkube。仅重置Kube群集配置
