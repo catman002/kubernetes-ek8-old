@@ -19,6 +19,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 - 当前的ek8版本是CentOS，安装机和集群服务器必须是centos7或更高版本
 - 如果您需要支持k8s更高版本或支持其他服务器版本，请在GitHub上给作者留言
 ```
+
 # NOTCE:
 
 Ek8 [easy kubernetes] is a fast installation and high availability kubernetes product,
