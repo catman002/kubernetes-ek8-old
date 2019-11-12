@@ -15,7 +15,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 7) 支持ek8安装机和集群分离安装，ek8安装机可以是macos[version:forMAC]或支持bash的linux机器[version:forLinux]
 
 - 安装前先配置 e8k.cfg 文件，设置相关服务器信息
-- 请确保安装程序所在的计算机可以通过SSH无密码登机群录服.
+- 请确保ek8安装程序所在的计算机可以通过SSH无密码登机群录服.
 - 当前的ek8版本是CentOS，安装机和集群服务器必须是centos7或更高版本
 - 如果您需要支持k8s更高版本或支持其他服务器版本，请在GitHub上给作者留言
 ```
@@ -87,7 +87,7 @@ which is simple and easy to use. The product has the following features:
 
 ### notes：
         1)ek8 is installed through the manager computer. The manager computer must have a bash environment, such as Linux OS and Mac OS[version:forMAC]
-        2)Make sure that the manager computer can log in to the server in the cluster through SSH without password
+        2)Make sure that the ek8 manager computer can log in to the server in the cluster through SSH without password
         3)By default, all commands in ek8 check the validity of configuration parameters. If you want to turn off, add '--o=nocheck' on the command line
         4)The current ek8 version only supports CentOS 7 and above. Other systems download the corresponding version
 
