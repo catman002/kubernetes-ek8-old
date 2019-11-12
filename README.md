@@ -77,7 +77,7 @@ which is simple and easy to use. The product has the following features:
       help command   :显示帮助。Display command instructions, excluding --t and --o
 ### example:
 - ek8 install --t=initall . Install all software required for cluster environment (including docker, Kube, keepalived, haproxy, keepalived, registry)
-- ek8 install --t=initall  --o=excludedocker . Install the software required for the cluster environment, but} do not install docker. 
+- ek8 install --t=initall  --o=excludedocker . Install the software required for the cluster environment, but do not install docker. 
 - ek8 install --t=initkube . Install Kebu software on cluster server only and initialize Kube environmet
 - ek8 install --t=initkube  --o=only . Only Kube cluster configuration is installed, Kube software is not installed
 - ek8 delete --t=clearall .  Delete all the software installed in the cluster environment, [equivalent to resetting the environment, use with caution]
