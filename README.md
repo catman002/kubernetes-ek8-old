@@ -7,8 +7,8 @@
 Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。
 通过一条命令即可完成k8s集群环境安装、配置。该产品具有以下特点：
 1) 集群安装包由Kube、keepalived、haproxy、docker和docker-registry组成
-2) 支持灵活的安装类型。默认情况下，用户可以选择全部安装或选择性安装根
-3) 安装程序自动检查配置。包括IP合法性，IP连接、帐户可用性和IP可用性
+2) 支持灵活的安装类型。用户可以选择全部安装或选择性安装
+3) 安装程序自动检查配置。包括IP合法性，服务器连通性、帐户可用性和IP可用性
 4) 支持覆盖安装和全新安装。在安装期间自动检查历史版本的有效性根据情况继续使用或更新
 5) 安装程序自动设置群集服务器环境所需的环境
 6) 支持远程集群安装
@@ -31,10 +31,10 @@ which is simple and easy to use. The product has the following features:
 4) support overlay installation. Automatically check the validity of historical version during installation and
    continue to use or update according to the situation
 5) setup automatically sets the environment required for cluster server environment
-6) support the installation mode of the manager server. The manager server can be macos[version:forMAC] or Bash supporting Linux machine[version:forLinux]
+6) Support ek8 installation compute and cluster separation. the compute can be macos[version:forMAC] or Bash supporting Linux machine[version:forLinux]
 
 - to configure ek8.cfg before installation
-- Please make sure that the machine where the installer is located can log on  the server through SSH without password.
+- Please make sure that the ek8 installation compute can log on  the server through SSH without password.
 - The current ek8 version is CentOS. Please confirm that the CentOS version of cluster server is V7 or higher
 - This version is free. If you need a higher version, please leave a message with the author on GitHub
 ```
@@ -86,10 +86,8 @@ which is simple and easy to use. The product has the following features:
 - ek8 delete --t=clearhaproxy . Only delete the haproxy environment in the cluster server
 
 ### notes：
-        1)ek8 is installed through the manager computer. The manager computer must have a bash environment, such as Linux OS and Mac OS[version:forMAC]
-        2)Make sure that the ek8 manager computer can log in to the server in the cluster through SSH without password
-        3)By default, all commands in ek8 check the validity of configuration parameters. If you want to turn off, add '--o=nocheck' on the command line
-        4)The current ek8 version only supports CentOS 7 and above. Other systems download the corresponding version
+    By default, all commands in ek8 check the validity of configuration parameters. If you want to turn off, add '--o=nocheck' on the command line
+
 
 # 示例：
 ```
