@@ -4,19 +4,19 @@
 
 # EK8说明：
 ```
-Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。通过一条命令即可完成k8s集群环境安装、配置。
-该产品具有以下特点：
-1) 集群安装包由Kube、preserved、haproxy、docker和docker registry组成
-2) 支持灵活的安装类型。默认情况下，用户可以选择全部安装或选择性安装根据准备好的集群服务器
+Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。
+通过一条命令即可完成k8s集群环境安装、配置。该产品具有以下特点：
+1) 集群安装包由Kube、keepalived、haproxy、docker和docker registry组成
+2) 支持灵活的安装类型。默认情况下，用户可以选择全部安装或选择性安装根
 3) 安装程序自动检查配置。包括IP合法性，IP连接、帐户可用性和IP可用性
 4) 支持覆盖安装和全新安装。在安装期间自动检查历史版本的有效性根据情况继续使用或更新
 5) 安装程序自动设置群集服务器环境所需的环境
 6) 支持manager服务器的安装方式。manager服务器可以是macos[version:forMAC]或支持bash的linux机器[version:forLinux]
 
 - 安装前先配置 e8k.cfg 文件，设置相关服务器信息
-- 请确保安装程序所在的计算机可以通过SSH登录服务器，而无需密码.(支持安装程序所在机器远程安装)
+- 请确保安装程序所在的计算机可以通过SSH无密码登机群录服.
 - 当前的ek8版本是CentOS，安装机和集群服务器必须是centos7或更高版本
-- 当前ek8版本是免费。如果您需要支持k8s更高版本或支持其他服务器版本，请在GitHub上给作者留言
+- 如果您需要支持k8s更高版本或支持其他服务器版本，请在GitHub上给作者留言
 ```
 # NOTCE:
 
@@ -93,11 +93,11 @@ which is simple and easy to use. The product has the following features:
 # 示例：
 ```
 - ek8 install  --t=initall。安装集群环境所需的所有软件（包括docker、Kube、keepalived、haproxy、keepalived、registry）
-- ek8 install  --t=initall --o=excludedocker。安装群集环境所需的软件，但}不要安装docker。
+- ek8 install  --t=initall --o=excludedocker。安装群集环境所需的软件，但不安装docker。
 - ek8 install  --t=initkube 。 仅在群集服务器上安装Kebu软件并初始化Kube环境
-- ek8 install  --t=initkube --o=only。仅安装了Kube群集配置，未安装Kube软件
+- ek8 install  --t=initkube --o=only。仅安装了Kube群集配置，不安装Kube软件
 - ek8 delete --t=clearall。删除群集环境中安装的所有软件，[相当于重置环境，请谨慎使用]
-- ek8 delete --t=clearall --o=excludedocker--o=excluderegistry。删除集群上的所有软件并重置，但不要删除docker和docker注册表
+- ek8 delete --t=clearall --o=excludedocker--o=excluderegistry。删除集群上的所有软件并重置，但不删除docker和docker-registry
 - ek8 delete --t=clearkube。仅重置Kube群集配置
 - ek8 delete --t=clearhaproxy。只删除群集服务器中的haproxy环境
 
