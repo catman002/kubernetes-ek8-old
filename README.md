@@ -24,7 +24,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 
 Ek8 [easy kubernetes] is a fast installation and high availability kubernetes product,
 which is simple and easy to use. The product has the following features:
-1) cluster installation package consists of Kube, preserved, haproxy, docker and docker registry
+1) cluster installation package consists of Kube, keepalived, haproxy, docker and docker registry
 2) flexible installation types are supported. Users can choose to install all or selectively by default
    according to the prepared cluster servers
 3) the installation program automatically checks the configuration, including IP legality,
