@@ -1,6 +1,6 @@
 # ek8V0.2-centos7-kube1.16.3_forCENTOS下载：
 
-[下载](https://github.com/catman002/kubernetes-ek8/releases/download/ek8v0.1SR/ek8V0.1-centos7-kube1.15.3_forCENTOS-20191112.tar.gz)
+[下载](https://github.com/catman002/kubernetes-ek8/releases)
 
 ## ek8v0.2变化：
 - 支持etcd 集群独立部署
