@@ -1,6 +1,7 @@
 # ek8V0.2-centos7-kube1.16.3_forCENTOS下载：
 
 [下载](https://github.com/catman002/kubernetes-ek8/releases/download/ek8v0.1SR/ek8V0.1-centos7-kube1.15.3_forCENTOS-20191112.tar.gz)
+
 ## ek8v0.2变化：
 - 支持etcd 集群独立部署
 - kubernetes更新为v1.16.3
@@ -91,6 +92,7 @@ which is simple and easy to use. The product has the following features:
 - ek8 install --t=initall . Install all software required for cluster environment (including docker, Kube, keepalived, haproxy, keepalived, registry)
 - ek8 install --t=initall  --o=excludedocker . Install the software required for the cluster environment, but do not install docker. 
 - ek8 install --t=initkube . Install Kebu software on cluster server only and initialize Kube environmet
+- ek8 install --t=initetcd . Install Etcd software on cluster server only
 - ek8 install --t=initkube  --o=only . Only Kube cluster configuration is installed, Kube software is not installed
 - ek8 delete --t=clearall .  Delete all the software installed in the cluster environment, [equivalent to resetting the environment, use with caution]
 - ek8 delete --t=clearall  --o=excludedocker  --o=excluderegistry . Delete all software on the cluster and reset , but do not delete docker and docker-registry
@@ -106,6 +108,7 @@ which is simple and easy to use. The product has the following features:
 - ek8 install  --t=initall。安装集群环境所需的所有软件（包括docker、Kube、keepalived、haproxy、keepalived、registry）
 - ek8 install  --t=initall --o=excludedocker。安装群集环境所需的软件，但不安装docker(需确保已经安装了docker)。
 - ek8 install  --t=initkube 。 仅在群集服务器上安装Kebu软件并初始化Kube环境，不安装配置其他的
+- ek8 install  --t=initetcd 。 仅在群集服务器上安装etcd软件，不安装配置其他的
 - ek8 install  --t=initkube --o=only。仅重新配置Kube群集配置，不安装Kube软件
 - ek8 delete --t=clearall。删除群集环境中安装的所有软件，[相当于重置环境，请谨慎使用]
 - ek8 delete --t=clearall --o=excludedocker--o=excluderegistry。清理集群上的所有软件和环境，但不删除docker和docker-registry
@@ -116,6 +119,7 @@ which is simple and easy to use. The product has the following features:
 - 默认情况下，ek8中的所有命令都检查配置参数的有效性。如果要关闭，请在命令行中添加“--o=nocheck”
 
 ```
+
 
 #
 #
