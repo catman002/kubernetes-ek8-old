@@ -3,8 +3,10 @@
 [下载](https://github.com/catman002/kubernetes-ek8/releases)
 
 ## ek8v0.2变化：
-- 支持etcd 集群独立部署
-- kubernetes更新为v1.16.3
+- 支持etcd 集群独立部署. 
+  Support etcd cluster independent deployment
+- kubernetes更新为v1.16.3. 
+  Kubernetes updated to v1.16.3
 # EK8说明：
 ```
 Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。
