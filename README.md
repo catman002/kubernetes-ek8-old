@@ -46,12 +46,12 @@ which is simple and easy to use. The product has the following features:
 - The current ek8 version is CentOS. Please confirm that the CentOS version of cluster server is V7 or higher
 - This version is free. If you need a higher version, please leave a message with the author on GitHub
 ```
-                               kubernetes version: v1.19.4
-                               docker version: v19.03.13-3.el7
-                               keepalived version: v2.0.19
-                               haproxy version: v1.8.13
-                               docker-registry: v2.0
-                               etcd: v3.3.15-0
+                  kubernetes version: v1.19.4
+                  docker version: v19.03.13-3.el7
+                  keepalived version: v2.0.19
+                  haproxy version: v1.8.13
+                  etcd version: v3.4.3-0
+                  docker-registry: v2.0
 ```
 
 # ek8 command details:
