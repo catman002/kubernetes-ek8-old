@@ -2,7 +2,7 @@
 
 [下载](https://github.com/catman002/kubernetes-ek8/releases)
 
-## ek8v0.2变化：
+## ek8v0.9变化：
 - 支持etcd 集群独立部署.  Support etcd cluster independent deployment
 - kubernetes更新为v1.19.4.  Kubernetes updated to v1.19.4.
 # EK8说明：
