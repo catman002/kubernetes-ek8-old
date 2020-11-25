@@ -1,10 +1,10 @@
-# ek8V0.2-centos7-kube1.16.3_forCENTOS下载：
+# ek8v0.9_forCENTOS下载：
 
 [下载](https://github.com/catman002/kubernetes-ek8/releases)
 
 ## ek8v0.2变化：
 - 支持etcd 集群独立部署.  Support etcd cluster independent deployment
-- kubernetes更新为v1.16.3.  Kubernetes updated to v1.16.3
+- kubernetes更新为v1.19.4.  Kubernetes updated to v1.19.4.
 # EK8说明：
 ```
 Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。
@@ -46,8 +46,8 @@ which is simple and easy to use. The product has the following features:
 - The current ek8 version is CentOS. Please confirm that the CentOS version of cluster server is V7 or higher
 - This version is free. If you need a higher version, please leave a message with the author on GitHub
 ```
-                               kubernetes version: v1.16.3
-                               docker version: v18.09.9-3.el7
+                               kubernetes version: v1.19.4
+                               docker version: v19.03.13-3.el7
                                keepalived version: v2.0.19
                                haproxy version: v1.8.13
                                docker-registry: v2.0
