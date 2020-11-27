@@ -5,6 +5,7 @@
 ## ek8v0.9变化：
 - 支持etcd 集群独立部署.  Support etcd cluster independent deployment
 - kubernetes更新为v1.19.4.  Kubernetes updated to v1.19.4.
+- docker更新为最新版本：v19.03.13-3.el7
 # EK8说明：
 ```
 Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用。
