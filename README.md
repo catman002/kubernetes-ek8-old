@@ -1,11 +1,11 @@
-# ek8-for-centos7-v1.21.4下载：
+# ek8-for-centos7-v1.22.4下载：
 
 [下载](https://github.com/catman002/kubernetes-ek8/releases)
 
 
 # EK8说明：
 ```
-Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用 【v1.21.4及以上版本go语言重新实现】
+Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，简单易用 【v1.22.4及以上版本go语言重新实现】
 通过一条命令即可完成k8s集群环境安装、配置。该产品具有以下特点：
 1) 集群安装包主要由Kube-apiserver、kuber-controller-manager、kuber-scheduler、kuelet、coredns、calico、etcd、keepalived、haproxy、docker和docker-registry组成
 2) 支持灵活的安装类型。用户可以选择全部安装或选择性安装
