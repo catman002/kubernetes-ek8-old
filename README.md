@@ -24,8 +24,8 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 
 # 安装步骤：
 ```
-1)ek8 create all , 根据配置生成可安装文件（执行1次即可）
-2)ek8 install all，开始安装
+1)ek8 create all , 根据配置生成可安装文件（执行1次即可，初次执行需要提供产品秘锁：123456）
+2)ek8 install all，开始安装(根据提示输入远程服务器的ssh的root密码)
 ```
 
 # 注意:
