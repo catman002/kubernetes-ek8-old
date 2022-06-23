@@ -33,9 +33,9 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 # 注意:
 ```
 - 初次安装需要产品key：123456 
-- 安装过充中需要提供集群服务器登录密码，根据提示输入即可！
-- 安装前，在安装机安装 go1.18.x 环境;安装机包含sshpass
-- kubernetes1.24.x及以上版本容器用的是containerd!!!
+- 安装过充中需要提供集群服务器登录密码，根据提示输入即可
+- 安装前，在安装机安装 go1.18.x 环境;安装机包含sshpass和rsync
+- kubernetes1.24.x及以上版本容器用的是containerd
 ```
 
 # 常用命令：
