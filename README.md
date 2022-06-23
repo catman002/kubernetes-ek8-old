@@ -45,7 +45,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 - ek8 install  all  --exclude=docker,etcd 安装集群环境所需的所有组件,但无需重新安装docker和etcd
 - ek8 install kubelet,kubeproxy 重新安装kubelet和kubeproxy
 - ek8 delete all 删除集群环境
-- ek8 appendnodes all 快速部署新的节点服务器
+- ek8 appendnodes all 快速部署新的节点服务器 （v1.24.2及以上支持）
 - ek8 stop/start [mod] 停止/启动集群特定服务
 ... ...
 ```
