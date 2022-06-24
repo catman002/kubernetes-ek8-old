@@ -22,7 +22,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 
 ```
 
-# 安装准备:
+# 安装前须知、准备:
 ```
 - 当前的ek8版本支持的集群服务器为CentOS7.x；安装机可以是 MAC 或者 centos7.x
 - 初次安装需要产品key：123456 
