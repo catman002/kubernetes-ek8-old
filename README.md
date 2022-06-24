@@ -18,7 +18,6 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 - **安装机支持centos和mac；集群服务器必须为centos7.x**
 
 ```
-- 当前的ek8版本支持的集群服务器为CentOS7.x；安装机可以是mac或者centos7.x
 - 如果您需要支持k8s更高版本或支持其他服务器版本，请在GitHub上给作者留言
 
 ```
@@ -32,9 +31,10 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 
 # 注意:
 ```
+- 当前的ek8版本支持的集群服务器为CentOS7.x；安装机可以是 MAC 或者 centos7.x
 - 初次安装需要产品key：123456 
 - 安装过充中需要提供集群服务器登录密码，根据提示输入即可
-- 安装前，现在安装机安装：shpass和rsync
+- 安装前，先在安装机安装必须软件：shpass和rsync
 - kubernetes1.24.x及以上版本容器用的是containerd
 - 初次安装会检查集群中服务器的内核版本，低于4.18会自动升级、重启服务器，根据提示重新在安装及执行安装命令即可！！！
 ```
