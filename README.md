@@ -35,18 +35,18 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 # 安装步骤：
 ```
 1)修改config.cfg，配置服务器相关信息
-2)ek8 create all , 根据配置生成集群可安装文件（执行1次即可，初次执行需要提供产品秘锁：123456）
-3)ek8 install all，开始安装集群(根据提示输入远程服务器的ssh的root密码)
+2)ek8 qinstall all，开始安装集群(初次执行需要提供产品秘锁：123456；然后根据提示输入远程服务器的ssh的root密码)
 ```
 
 # 常用命令：
 ```
 - ek8 help 查看命令帮助
-- ek8 install  all 安装集群环境所需的所有组件 (全新安装采用)
-- ek8 install  all  --exclude=docker,etcd 安装集群环境所需的所有组件,但无需重新安装docker和etcd
-- ek8 install kubelet,kubeproxy 重新安装kubelet和kubeproxy
+- ek8 qinstall  all 安装集群环境所需的所有组件 (全新安装采用)
+- ek8 qinstall  all  --exclude=docker,etcd 安装集群环境所需的所有组件,但无需重新安装docker和etcd
+- ek8 qinstall kubelet,kubeproxy 重新安装kubelet和kubeproxy
 - ek8 delete all 删除集群环境
 - ek8 appendnodes all 快速部署新的节点服务器 （v1.24.2及以上支持,用于后期增加服务器快速加入集群）
+- ek8 appendmasters all 快速部署新的master节点服务器 v1.24.2及以上支持,用于后期增加服务器快速加入集群）
 - ek8 stop/start [mod] 停止/启动集群特定服务
 ... ...
 ```
