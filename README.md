@@ -27,8 +27,8 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 - 当前的ek8版本支持的集群服务器为CentOS7.x；安装机可以是 MAC 或者 centos7.x
 - 初次安装需要产品key：123456 
 - 安装过充中需要提供集群服务器登录密码，根据提示输入即可
-- 安装前，先在安装机安装必须软件：shpass和rsync
-- 初次安装会检查集群中服务器的内核版本，低于4.18会自动升级、重启服务器，根据提示重新在安装及执行安装命令即可！！！
+- 安装前，先在安装机安装必要软件：shpass和rsync
+- 初次安装会检查集群中服务器的内核版本，低于4.18会自动升级、升级完后会提示重启服务器，根据提示重新执行安装命令即可！！！
 - kubernetes1.24.x及以上版本容器用的是containerd，如需docker容器，请下载v1.23.x版本
 ```
 
@@ -41,12 +41,21 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 # 常用命令：
 ```
 - ek8 help 查看命令帮助
-- ek8 qinstall  all 安装集群环境所需的所有组件 (全新安装采用)
+- ek8 qinstall  all 安装集群环境所需的所有组件 (全新安装采用，是原create+install命令的组合，建议采用)
 - ek8 qinstall  all  --exclude=docker,etcd 安装集群环境所需的所有组件,但无需重新安装docker和etcd
 - ek8 qinstall kubelet,kubeproxy 重新安装kubelet和kubeproxy
-- ek8 delete all 删除集群环境
-- ek8 appendnodes all 快速部署新的节点服务器 （v1.24.2及以上支持,用于后期增加服务器快速加入集群）
-- ek8 appendmasters all 快速部署新的master节点服务器 v1.24.2及以上支持,用于后期增加服务器快速加入集群）
+- ek8 qdelete all 删除集群环境所有组件和缓存（containerd/docker和registry缓存）
+- ek8 delete all 删除集群环境所有组件和缓存
+- ek8 appendnodes all 快速部署新的节点服务器 （v1.24.x及以上支持,用于后期增加node快速加入集群，需要配置new_node_servers=(nodeX:xx.xx.xx.xx)参数）
+- ek8 appendmasters all 快速部署新的master节点服务器 v1.24.x及以上支持,用于后期增加master快速加入集群,需要配置new_api_servers=(nodeX:xx.xx.xx.xx)参数）
 - ek8 stop/start [mod] 停止/启动集群特定服务
 ... ...
 ```
+
+#安装完成后的一些操作需要注意的
+- 1.24.x默认容器为containerd,安装完后，可以采用 ctr/crictl/nerdctl 操作
+- ctr/nerdctl 默认的的image空间为 default,crictl默认image的操作空间是k8s.io，需要注意
+- kubernetes内部默认采用的是crictl，所以一定要记得它的image空间位置是k8s.io !!!!!!!
+
+构建image可以采用nerdctl build -t xxx .
+
