@@ -42,7 +42,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 ```
 - ek8 help 查看命令帮助
 - ek8 qinstall  all 安装集群环境所需的所有组件 (全新安装采用，是原create+install命令的组合，建议采用)
-- ek8 qinstall  all  --exclude=docker,etcd 安装集群环境所需的所有组件,但无需重新安装docker和etcd
+- ek8 qinstall  all  --exclude=containerd,etcd 安装集群环境所需的所有组件,但无需重新安装containerd和etcd
 - ek8 qinstall kubelet,kubeproxy 重新安装kubelet和kubeproxy
 - ek8 qdelete all 删除集群环境所有组件和缓存（containerd/docker和registry缓存）
 - ek8 delete all 删除集群环境所有组件和缓存
