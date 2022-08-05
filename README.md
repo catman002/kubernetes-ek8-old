@@ -57,5 +57,7 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 - ctr/nerdctl 默认的的image空间为 default,crictl默认image的操作空间是k8s.io，需要注意
 - kubernetes内部默认采用的是crictl，所以一定要记得它的image空间位置是k8s.io !!!!!!!
 
-构建image可以采用nerdctl build -t xxx .
+- 构建image可以采用nerdctl build -t xxx .
+- 用ctr/crictl推送和拉取image的时候需的账户信息就是config.cfg配置的registry_username/registry_passwd
+
 
