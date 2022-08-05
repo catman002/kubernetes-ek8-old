@@ -46,8 +46,8 @@ Ek8[easy kubernetes]是一款快速安装和高可用性的kubernetes产品，�
 - ek8 qinstall kubelet,kubeproxy 重新安装kubelet和kubeproxy
 - ek8 qdelete all 删除集群环境所有组件和缓存（containerd/docker和registry缓存）
 - ek8 delete all 删除集群环境所有组件
-- ek8 appendnodes all 快速部署新的节点服务器 （v1.24.x及以上支持,用于后期增加node快速加入集群，需修改配置文件参数：new_node_servers=(nodeX:xx.xx.xx.xx)）
-- ek8 appendmasters all 快速部署新的master节点服务器 v1.24.x及以上支持,用于后期增加master快速加入集群,需修改配置文件参数：new_api_servers=(nodeX:xx.xx.xx.xx)）
+- ek8 appendnodes all 快速部署新的节点服务器 （v1.23.x及以上支持,用于后期增加node快速加入集群，需修改配置文件参数：new_node_servers=(nodeX:xx.xx.xx.xx)）
+- ek8 appendmasters all 快速部署新的master节点服务器 v1.23.x及以上支持,用于后期增加master快速加入集群,需修改配置文件参数：new_api_servers=(nodeX:xx.xx.xx.xx)）
 - ek8 stop/start [mod] 停止/启动集群特定服务
 ... ...
 ```
