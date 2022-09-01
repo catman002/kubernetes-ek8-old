@@ -6,9 +6,8 @@
 
 
 # EK8说明：
+**Ek8[easy kubernetes]是一款可以快速构建高可用性的kubernetes的产品，简单易用** 【v1.23.3及以上版本go语言重新实现】
 ```
-- **Ek8[easy kubernetes]是一款可以快速构建高可用性的kubernetes的产品，简单易用** 【v1.23.3及以上版本go语言重新实现】
-
 只需通过简单配置集群服务器ip信息，即可通过一条命令即可完成k8s集群环境配置、安装。
 该产品具有以下特点：
 1) 集群安装包主要由Kube-apiserver、kuber-controller-manager、kuber-scheduler、kuelet、coredns、calico、etcd、keepalived、haproxy、docker、containerd和registry组成
