@@ -2,7 +2,7 @@
 # ek8-for-centos7-v1.24.3
 # ek8-for-centos7-v1.25.0
 
-[下载](https://github.com/catman002/kubernetes-ek8/releases)
+[版本下载](https://github.com/catman002/kubernetes-ek8/releases)
 
 
 # EK8说明：
