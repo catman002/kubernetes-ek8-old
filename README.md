@@ -6,14 +6,17 @@
 
 
 # EK8说明：
-*Ek8[easy kubernetes]是一款可以快速构建高可用性的kubernetes的产品，简单易用* 【v1.23.3及以上版本go语言重新实现】
+*Ek8[easy kubernetes]是一款可以快速构建高可用性的kubernetes的产品，简单易用* 
 ```
-只需通过简单配置集群服务器ip信息，即可通过一条命令即可完成k8s集群环境配置、安装。
+
 产品具有以下特点：
-1) 集群安装包主要由Kube-apiserver、kuber-controller-manager、kuber-scheduler、kuelet、coredns、calico、etcd、keepalived、haproxy、docker、containerd和registry组成
-2) 支持灵活的安装类型。用户可以选择全部安装或选择性安装
-3) 安装程序自动检查配置。包括IP合法性，服务器连通性、帐户可用性和IP可用性
-4) 安装程序自动设置群集服务器环境所需的环境
+1）只需通过简单配置集群服务器ip信息，即可通过一条命令即可完成k8s集群环境配置、安装
+2) v1.23.3及以上版本go语言重新实现,源码编译，二进制安装；核心组件全部离线，无需翻墙
+3) 集群安装包主要由Kube-apiserver、kuber-controller-manager、kuber-scheduler、kuelet、coredns、calico、etcd、keepalived、haproxy、docker、containerd和registry组成
+4) 支持灵活的安装类型。用户可以选择全部安装或选择性安装
+5) 安装程序自动检查配置，包括IP合法性，服务器连通性、帐户可用性和IP可用性
+6) 安装程序自动设置群集服务器环境所需的环境
+7） 默认支持10台服务器同时安装，安装并发数可配
 ```
 - **下载ek8-for-{os}-{version}-on-{os}.tar.gz, 拷贝到安装机并解压**
 - **安装前先配置 config.cfg 文件，设置相关服务器信息[注释为 “需修改“ 的是必须要修改]**
